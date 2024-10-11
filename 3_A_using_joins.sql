@@ -21,6 +21,3 @@ SELECT o.OrderID, OrderDate, ShipName, ShipAddress, p.ProductName FROM orders o
 JOIN `order details` od ON o.OrderID = od.OrderID
 JOIN products p ON od.ProductID = p.ProductID 
 WHERE p.ProductName = 'Sasquatch Ale';
-
-
-
